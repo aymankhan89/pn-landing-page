@@ -1,33 +1,31 @@
 'use client';
 
 
-import { PainPointSvg } from '../assets/svgs';
+import { IntegrationSvg } from '../assets/svgs';
 import { AuroraTextHeading } from '../components/custom/AuroraTextHeading';
-import { BentoGridDemo } from '../components/custom/BentoGridDemo';
+import { OrbitingCirclesDemo } from '../components/custom/OrbitingCirclesDemo';
 import { TagPill } from '../components/custom/TagPill';
 
-const PainPoints = () => (
+const IntegrationSection = () => (
     <section className="mt-[120px]">
         <div className="container mx-auto px-4 md:px-10">
             {/* Section header */}
-            <div className="text-left mb-[70px]">
-                <TagPill icon={<PainPointSvg />}
-                    label="Pain Points" />
+            <div className="text-center mb-[20px]">
+                <TagPill icon={<IntegrationSvg />}
+                    label="Integrations" />
                 <div className="text-3xl mt-[25px] sm:text-4xl lg:text-[30px] font-extrabold text-gray-900">
                     <AuroraTextHeading className="inline lg:text-[30px]">
-                        What’s Broken
-                    </AuroraTextHeading>{" "}
-                    in Recruitment?
+                        Seamless Integrations                    </AuroraTextHeading>{" "}
+                    for
                     <br />
-                    Let’s Break It Down
-                </div>
+                    a Smarter Workflow                </div>
 
             </div>
 
             {/* Grid of pain points */}
-            <BentoGridDemo />
+            <OrbitingCirclesDemo />
         </div>
     </section>
 );
 
-export default PainPoints;
+export default IntegrationSection;

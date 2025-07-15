@@ -1,19 +1,13 @@
-// components/ui/TagPill.tsx
 'use client';
 
 import React from 'react';
 import { cn } from '@/app/lib/utils';
 
 export interface TagPillProps {
-  /** Icon on the left side */
   icon?: React.ReactNode;
-  /** The text or element to display */
   label: React.ReactNode;
-  /** Optional click handler */
   onClick?: React.MouseEventHandler<HTMLDivElement>;
-  /** Extra classes (e.g. to override colors) */
   className?: string;
-  /** Choose one of a few variants for bg/text colors */
   variant?: 'neutral' | 'primary' | 'accent';
 }
 

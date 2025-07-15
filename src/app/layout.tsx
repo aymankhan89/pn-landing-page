@@ -3,13 +3,20 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Footer, Navbar } from "./layouts";
 import localFont from 'next/font/local'
+import { Inter } from "next/font/google"
 
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["300", "400", "500", "700"],
+  display: "swap",
+})
 
 const gilroy = localFont({
   src: [
     { path: 'public/fonts/Gilroy-Regular.woff', weight: '400', style: 'normal' },
-    { path: 'public/fonts/gilroy-medium.ttf',  weight: '400', style: 'normal' },
-    { path: 'public/fonts/Gilroy-Bold.woff2',    weight: '700', style: 'normal' },
+    { path: 'public/fonts/gilroy-medium.ttf', weight: '400', style: 'normal' },
+    { path: 'public/fonts/Gilroy-Bold.woff2', weight: '700', style: 'normal' },
   ],
   variable: '--font-gilroy',
   display: 'swap',

@@ -9,8 +9,31 @@ import TopArrowSvg from "./TopArrowSvg";
 import DiamondSvg from "./DiamondSvg";
 import RocketSvg from "./RocketSvg";
 import PainPointSvg from "./PainPointSvg";
-export {
+import IntegrationSvg from "./IntegrationSvg";
+import FeatureSvg from "./FeatureSvg";
+import SourcingSvg from "./SourcingSvg";
+import CollabrationSvg from "./CollabrationSvg";
+import CustomizationSvg from "./CustomizationSvg";
+import SecuritySvg from "./SecuritySvg";
+import PlatformSvg from "./PlatformSvg";
+import DatabaseSvg from "./DatabaseSvg";
+import ScoringSvg from "./ScoringSvg";
+import WithHiriteSvg from "./WithHiriteSvg";
+import DollarSvg from "./DollarSvg";
+import PricingSvg from "./PricingSvg";
+import LitSvg from "./LitSvg";
+import CheckSvg from "./CheckSvg";
+import ProcessingSvg from "./ProcessingSvg";
+import CapabiliteSvg from "./CapabiliteSvg";
+import ImportSvg from "./ImportSvg";
+import ThunderSvg from "./ThunderSvg";
+import DifferentSvg from "./DifferentSvg";
+import FreeSvg from "./FreeSvg";
+import TimerSvg from "./TimerSvg";
+    export {
+    FeatureSvg,
     PainPointSvg,
+    IntegrationSvg,
     FacebookSvg,
     InstagramSvg,
     LinkendInSvg,
@@ -20,6 +43,25 @@ export {
     FooterLogoSvg,
     TopArrowSvg,
     DiamondSvg,
-    RocketSvg
+    RocketSvg,
+    SourcingSvg,
+    CollabrationSvg,
+    CustomizationSvg,
+    SecuritySvg,
+    PlatformSvg,
+    CapabiliteSvg,
+    DatabaseSvg,
+    ProcessingSvg,
+    ScoringSvg,
+    WithHiriteSvg,
+    DollarSvg,
+    PricingSvg,
+    LitSvg,
+    CheckSvg,
+    ImportSvg,
+    ThunderSvg,
+    DifferentSvg,
+    FreeSvg,
+    TimerSvg   
 };
     

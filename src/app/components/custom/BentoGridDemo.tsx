@@ -9,11 +9,11 @@ import {
   IconTableColumn,
 } from '@tabler/icons-react';
 import { BentoGrid, BentoGridItem } from '../primitives/accertinity/bento-grid';
-import  Communication  from '@/app/assets/pngs/Communication.png';
-import  PoorMatch  from '@/app/assets/pngs/PoorMatch.png';
-import  LackVisibility  from '@/app/assets/pngs/LackVisibility.png';
-import  ManualTasks  from '@/app/assets/pngs/ManualTasks.png';
-import  DataMigration  from '@/app/assets/pngs/DataMigration.png';
+import Communication from '@/app/assets/pngs/Communication.png';
+import PoorMatch from '@/app/assets/pngs/PoorMatch.png';
+import LackVisibility from '@/app/assets/pngs/LackVisibility.png';
+import ManualTasks from '@/app/assets/pngs/ManualTasks.png';
+import DataMigration from '@/app/assets/pngs/DataMigration.png';
 
 const items = [
   {
@@ -50,7 +50,7 @@ const items = [
 
 export function BentoGridDemo() {
   return (
-    <section className=" py-16">
+    <section className="">
       <div>
 
 
