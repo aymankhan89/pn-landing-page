@@ -8,7 +8,6 @@ import {
     UsersIcon,
     PuzzleIcon,
     MonitorIcon,
-    RocketIcon,
     XIcon,
 } from "lucide-react"
 

@@ -30,11 +30,10 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
       )}
     >
       {isImageHeader ? (
-        // @ts-ignore – header is string or StaticImageData
         <Image
           src={header}
           alt={typeof title === 'string' ? title : 'header image'}
-      
+
           className=""
         />
       ) : (

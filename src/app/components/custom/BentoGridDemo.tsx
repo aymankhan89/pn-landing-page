@@ -1,13 +1,7 @@
 'use client';
 
 import React from 'react';
-import {
-  IconArrowWaveRightUp,
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from '@tabler/icons-react';
+
 import { BentoGrid, BentoGridItem } from '../primitives/accertinity/bento-grid';
 import Communication from '@/app/assets/pngs/Communication.png';
 import PoorMatch from '@/app/assets/pngs/PoorMatch.png';

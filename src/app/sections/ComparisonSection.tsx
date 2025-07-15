@@ -38,7 +38,7 @@ export function ComparisonSection() {
                             >
                                 <div className="inline-flex items-center justify-center gap-2 px-3 py-1 text-primary">
                                     With Hirite
-                                    <WithHiriteSvg className="h-2 w-4" />
+                                    <WithHiriteSvg />
                                 </div>
                             </th>
                         </tr>
