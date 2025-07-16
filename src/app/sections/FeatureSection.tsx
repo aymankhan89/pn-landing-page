@@ -7,7 +7,7 @@ import { TagPill } from '../components/custom/TagPill';
 import { FeaturesTabs } from '../components/custom/FeaturesTabs';
 
 const FeatureSection = () => (
-    <section className="mt-[120px]">
+    <section id="features" className="mt-[120px]">
         <div className="container mx-auto px-4 md:px-10">
             {/* Section header */}
             <div className="text-left mb-[70px]">
