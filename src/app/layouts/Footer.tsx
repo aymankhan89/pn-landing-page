@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 import {
   FacebookSvg,
   FooterLogoSvg,
@@ -11,40 +11,43 @@ import {
   TopArrowSvg,
   TwitterSvg,
   // LocationSvg,
-} from '../assets/svgs';
+} from "../assets/svgs";
 
 const productLinks = [
-  { label: 'Features', href: '/features' },
-  { label: 'Pricing', href: '/pricing' },
-  { label: 'Why Hirte', href: '/why-hirte' },
+  { label: "Features", href: "/features" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Why Hirte", href: "/why-hirte" },
 ];
 
 const legalLinks = [
-  { label: 'Privacy Policy', href: '/privacy-policy' },
-  { label: 'Terms of Service', href: '/terms-of-service' },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms of Service", href: "/terms-of-service" },
 ];
 
 const contactMethods = [
-  { icon: PhoneSvg, value: '+91-7038575731', href: 'tel:+917038575731' },
-  { icon: MailSvg, value: 'info@proficientnow.com', href: 'mailto:info@proficientnow.com' },
+  { icon: PhoneSvg, value: "+91-7038575731", href: "tel:+917038575731" },
+  {
+    icon: MailSvg,
+    value: "info@proficientnow.com",
+    href: "mailto:info@proficientnow.com",
+  },
 ];
 
 const locationLines = [
-  'Sanali Info Park, 1st Floor, A Block,',
-  '8-2-120/113, Road No. 2, Banjara Hills,',
-  'Hyderabad – 500034',
+  "Sanali Info Park, 1st Floor, A Block,",
+  "8-2-120/113, Road No. 2, Banjara Hills,",
+  "Hyderabad – 500034",
 ];
 
 const socialLinks = [
-  { icon: TwitterSvg, href: '#' },
-  { icon: LinkendInSvg, href: '#' },
-  { icon: FacebookSvg, href: '#' },
-  { icon: InstagramSvg, href: '#' },
+  { icon: TwitterSvg, href: "#" },
+  { icon: LinkendInSvg, href: "#" },
+  { icon: FacebookSvg, href: "#" },
+  { icon: InstagramSvg, href: "#" },
 ];
 
 const Footer = () => {
-  const scrollToTop = () =>
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <footer className="relative bg-[#271F36] text-white overflow-hidden rounded-t-[15px]">
@@ -52,9 +55,7 @@ const Footer = () => {
       <div className="block md:hidden px-6 pt-8 pb-10">
         {/* Logo */}
         <div className="mb-8">
-          <FooterLogoSvg
-
-          />
+          <FooterLogoSvg />
         </div>
 
         {/* PRODUCT */}
@@ -137,9 +138,7 @@ const Footer = () => {
       <div className="hidden md:block h-[644px] pt-[60px] pb-6 px-4 md:px-[194px]">
         {/* Logo on desktop */}
         <div className="mb-8">
-          <FooterLogoSvg
-
-          />
+          <FooterLogoSvg />
         </div>
 
         <div className="relative z-10 flex flex-col h-full gap-[150px]">
@@ -198,8 +197,7 @@ const Footer = () => {
             {/* Bottom row */}
             <div className="flex items-center justify-center gap-[30px] text-[13px]">
               <div className="flex items-center space-x-2 text-white">
-                <FooterLogoSvg
-                />
+                <FooterLogoSvg />
                 <div className="leading-snug text-[#A7A7A7]">
                   Sanali Info Park. 1st Floor. A Block, 8-2-120/113, Road No. 2,
                   Banjara Hills, Hyderabad – 500034
