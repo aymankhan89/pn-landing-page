@@ -30,6 +30,7 @@ import ThunderSvg from "./ThunderSvg";
 import DifferentSvg from "./DifferentSvg";
 import FreeSvg from "./FreeSvg";
 import TimerSvg from "./TimerSvg";
+
     export {
     FeatureSvg,
     PainPointSvg,

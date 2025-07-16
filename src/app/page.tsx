@@ -7,6 +7,7 @@ import FeatureSection from "./sections/FeatureSection";
 import { ComparisonSection } from "./sections/ComparisonSection";
 import { PricingSection } from "./sections/PricingSection";
 import FaqSection from "./sections/FaqSection";
+import { BetaSection } from "./sections/BetaSection";
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
             <IntegrationSection />
             <PricingSection />
             <FaqSection />
+            <BetaSection />
         </>
     );
 }

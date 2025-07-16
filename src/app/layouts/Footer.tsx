@@ -42,7 +42,6 @@ const socialLinks = [
   { icon: InstagramSvg, href: '#' },
 ];
 
-
 const Footer = () => {
   const scrollToTop = () =>
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -53,14 +52,14 @@ const Footer = () => {
       <div className="block md:hidden px-6 pt-8 pb-10">
         {/* Logo */}
         <div className="mb-8">
-          <FooterLogoSvg />
+          <FooterLogoSvg
+
+          />
         </div>
 
-        {/* PRODUCT Section */}
+        {/* PRODUCT */}
         <div className="mb-6">
-          <h3 className="text-[14px] font-medium uppercase mb-3">
-            PRODUCT
-          </h3>
+          <h3 className="text-[14px] font-medium uppercase mb-3">PRODUCT</h3>
           <ul className="space-y-2 text-[14px]">
             {productLinks.map(({ label, href }) => (
               <li key={href}>
@@ -70,11 +69,9 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* LEGAL Section */}
+        {/* LEGAL */}
         <div className="mb-6">
-          <h3 className="text-[14px] font-medium uppercase mb-3">
-            LEGAL
-          </h3>
+          <h3 className="text-[14px] font-medium uppercase mb-3">LEGAL</h3>
           <ul className="space-y-2 text-[14px]">
             {legalLinks.map(({ label, href }) => (
               <li key={href}>
@@ -84,11 +81,9 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* CONTACT Section */}
+        {/* CONTACT */}
         <div className="mb-6">
-          <h3 className="text-[14px] font-medium mb-3">
-            Contact Us
-          </h3>
+          <h3 className="text-[14px] font-medium mb-3">Contact Us</h3>
           {contactMethods.map(({ icon: Icon, value, href }) => (
             <div key={value} className="flex items-center space-x-2 mb-2">
               <Icon />
@@ -99,11 +94,9 @@ const Footer = () => {
           ))}
         </div>
 
-        {/* LOCATION Section */}
+        {/* LOCATION */}
         <div className="mb-8">
-          <h3 className="text-[14px] font-medium mb-3">
-            Location
-          </h3>
+          <h3 className="text-[14px] font-medium mb-3">Location</h3>
           <div className="flex items-start space-x-2">
             {/* <LocationSvg /> */}
             <div className="text-[14px] leading-snug">
@@ -140,9 +133,16 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* DESKTOP */}
-      <div className="hidden md:block h-[644px] pt-10 pb-6 px-4 md:px-10">
-        <div className=" relative z-10 flex flex-col h-full justify-between">
+      {/* ——— DESKTOP ——— */}
+      <div className="hidden md:block h-[644px] pt-[60px] pb-6 px-4 md:px-[194px]">
+        {/* Logo on desktop */}
+        <div className="mb-8">
+          <FooterLogoSvg
+
+          />
+        </div>
+
+        <div className="relative z-10 flex flex-col h-full gap-[150px]">
           {/* Top row */}
           <div className="flex flex-col md:flex-row justify-between items-start space-y-6 md:space-y-0">
             {/* Social */}
@@ -176,38 +176,48 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Middle nav */}
-          <div className="flex flex-col gap-[40px] text-[13px] font-medium">
-            <div className="flex justify-center space-x-[50px]">
-              {productLinks.map(({ label, href }) => (
-                <Link key={href} href={href}>{label}</Link>
-              ))}
-            </div>
-            <div className="flex justify-center space-x-[50px]">
-              {legalLinks.map(({ label, href }) => (
-                <Link key={href} href={href}>{label}</Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Bottom row */}
-          <div className="flex items-center justify-center gap-[30px] text-[13px] text-[#A7A7A7] ">
-            <div className="flex items-center space-x-2">
-              <FooterLogoSvg />
-              <div className="leading-snug">
-              Sanali Info Park. 1st Floor. A Block, 8-2-120/113, Road No. 2, Banjara Hills, Hyderabad - 500034
+          <div className="flex flex-col gap-[80px]">
+            {/* Middle nav */}
+            <div className="flex flex-col gap-[40px] text-[13px] font-medium">
+              <div className="flex justify-center space-x-[50px]">
+                {productLinks.map(({ label, href }) => (
+                  <Link key={href} href={href}>
+                    {label}
+                  </Link>
+                ))}
+              </div>
+              <div className="flex justify-center space-x-[50px]">
+                {legalLinks.map(({ label, href }) => (
+                  <Link key={href} href={href}>
+                    {label}
+                  </Link>
+                ))}
               </div>
             </div>
-            <div>© 2025 — All Rights Reserved</div>
+
+            {/* Bottom row */}
+            <div className="flex items-center justify-center gap-[30px] text-[13px]">
+              <div className="flex items-center space-x-2 text-white">
+                <FooterLogoSvg
+                />
+                <div className="leading-snug text-[#A7A7A7]">
+                  Sanali Info Park. 1st Floor. A Block, 8-2-120/113, Road No. 2,
+                  Banjara Hills, Hyderabad – 500034
+                </div>
+              </div>
+              <div className="text-[#A7A7A7]">© 2025 — All Rights Reserved</div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Shared glow gradient */}
+      {/* ——— Shared gradient ring ——— */}
       <div
-        className="absolute bottom-0 left-1/2 transform -translate-x-1/2
-                   w-[1600px] h-[400px] rounded-b-full
-                   bg-[#7D7BF5] blur-3xl opacity-40 pointer-events-none"
+        className="
+          absolute bottom-[-1550px] left-1/2 transform -translate-x-1/2
+          w-[2300px] h-[1600px] rounded-full bg-[#7D7BF5]
+          blur-3xl opacity-40 pointer-events-none
+        "
         aria-hidden="true"
       />
     </footer>

@@ -10,7 +10,7 @@ import { LitSvg } from "../assets/svgs"
 
 export function PricingSection() {
     return (
-        <section className="space-y-6 px-4 py-12 md:px-[194px] bg-white">
+        <section id="pricing" className="space-y-6 px-4 py-12 md:px-[194px] bg-white">
             {/* Optional “Pricing” badge above */}
             <div className="text-center mb-[20px]">
                 <TagPill icon={<PricingSvg />} label="Pricing" />

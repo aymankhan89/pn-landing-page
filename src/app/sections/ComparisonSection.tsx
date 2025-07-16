@@ -10,7 +10,7 @@ export function ComparisonSection() {
     const lastIndex = comparisonData.length - 1
 
     return (
-        <section className="space-y-6 bg-[#271F36] lg:mt-[120px] px-4 py-[100px] md:px-[194px]">
+        <section id="why-hirte" className="space-y-6 bg-[#271F36] lg:mt-[120px] px-4 py-[100px] md:px-[194px]">
             <div className="flex flex-col gap-[25px] items-center justify-center">
                 <GradientBadge icon={<DollarSvg />}>
                     Comparison
