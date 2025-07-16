@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 import {
   FacebookSvg,
   FooterLogoSvg,
@@ -11,41 +11,43 @@ import {
   TopArrowSvg,
   TwitterSvg,
   // LocationSvg,
-} from '../assets/svgs';
+} from "../assets/svgs";
 
 const productLinks = [
-  { label: 'Features', href: '/features' },
-  { label: 'Pricing', href: '/pricing' },
-  { label: 'Why Hirte', href: '/why-hirte' },
+  { label: "Features", href: "/features" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Why Hirte", href: "/why-hirte" },
 ];
 
 const legalLinks = [
-  { label: 'Privacy Policy', href: '/privacy-policy' },
-  { label: 'Terms of Service', href: '/terms-of-service' },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms of Service", href: "/terms-of-service" },
 ];
 
 const contactMethods = [
-  { icon: PhoneSvg, value: '+91-7038575731', href: 'tel:+917038575731' },
-  { icon: MailSvg, value: 'info@proficientnow.com', href: 'mailto:info@proficientnow.com' },
+  { icon: PhoneSvg, value: "+91-7038575731", href: "tel:+917038575731" },
+  {
+    icon: MailSvg,
+    value: "info@proficientnow.com",
+    href: "mailto:info@proficientnow.com",
+  },
 ];
 
 const locationLines = [
-  'Sanali Info Park, 1st Floor, A Block,',
-  '8-2-120/113, Road No. 2, Banjara Hills,',
-  'Hyderabad – 500034',
+  "Sanali Info Park, 1st Floor, A Block,",
+  "8-2-120/113, Road No. 2, Banjara Hills,",
+  "Hyderabad – 500034",
 ];
 
 const socialLinks = [
-  { icon: TwitterSvg, href: '#' },
-  { icon: LinkendInSvg, href: '#' },
-  { icon: FacebookSvg, href: '#' },
-  { icon: InstagramSvg, href: '#' },
+  { icon: TwitterSvg, href: "#" },
+  { icon: LinkendInSvg, href: "#" },
+  { icon: FacebookSvg, href: "#" },
+  { icon: InstagramSvg, href: "#" },
 ];
 
-
 const Footer = () => {
-  const scrollToTop = () =>
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <footer className="relative bg-[#271F36] text-white overflow-hidden rounded-t-[15px]">
@@ -58,9 +60,7 @@ const Footer = () => {
 
         {/* PRODUCT Section */}
         <div className="mb-6">
-          <h3 className="text-[14px] font-medium uppercase mb-3">
-            PRODUCT
-          </h3>
+          <h3 className="text-[14px] font-medium uppercase mb-3">PRODUCT</h3>
           <ul className="space-y-2 text-[14px]">
             {productLinks.map(({ label, href }) => (
               <li key={href}>
@@ -72,9 +72,7 @@ const Footer = () => {
 
         {/* LEGAL Section */}
         <div className="mb-6">
-          <h3 className="text-[14px] font-medium uppercase mb-3">
-            LEGAL
-          </h3>
+          <h3 className="text-[14px] font-medium uppercase mb-3">LEGAL</h3>
           <ul className="space-y-2 text-[14px]">
             {legalLinks.map(({ label, href }) => (
               <li key={href}>
@@ -86,9 +84,7 @@ const Footer = () => {
 
         {/* CONTACT Section */}
         <div className="mb-6">
-          <h3 className="text-[14px] font-medium mb-3">
-            Contact Us
-          </h3>
+          <h3 className="text-[14px] font-medium mb-3">Contact Us</h3>
           {contactMethods.map(({ icon: Icon, value, href }) => (
             <div key={value} className="flex items-center space-x-2 mb-2">
               <Icon />
@@ -101,9 +97,7 @@ const Footer = () => {
 
         {/* LOCATION Section */}
         <div className="mb-8">
-          <h3 className="text-[14px] font-medium mb-3">
-            Location
-          </h3>
+          <h3 className="text-[14px] font-medium mb-3">Location</h3>
           <div className="flex items-start space-x-2">
             {/* <LocationSvg /> */}
             <div className="text-[14px] leading-snug">
@@ -180,12 +174,16 @@ const Footer = () => {
           <div className="flex flex-col gap-[40px] text-[13px] font-medium">
             <div className="flex justify-center space-x-[50px]">
               {productLinks.map(({ label, href }) => (
-                <Link key={href} href={href}>{label}</Link>
+                <Link key={href} href={href}>
+                  {label}
+                </Link>
               ))}
             </div>
             <div className="flex justify-center space-x-[50px]">
               {legalLinks.map(({ label, href }) => (
-                <Link key={href} href={href}>{label}</Link>
+                <Link key={href} href={href}>
+                  {label}
+                </Link>
               ))}
             </div>
           </div>
@@ -195,7 +193,8 @@ const Footer = () => {
             <div className="flex items-center space-x-2">
               <FooterLogoSvg />
               <div className="leading-snug">
-              Sanali Info Park. 1st Floor. A Block, 8-2-120/113, Road No. 2, Banjara Hills, Hyderabad - 500034
+                Sanali Info Park. 1st Floor. A Block, 8-2-120/113, Road No. 2,
+                Banjara Hills, Hyderabad - 500034
               </div>
             </div>
             <div>© 2025 — All Rights Reserved</div>
